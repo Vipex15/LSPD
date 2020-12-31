@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="index.css" type="text/css">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<div id="container">
+			<div id="startscreen">
+				<!-- <img class="logo" alt="lspd" src="https://static.wikia.nocookie.net/gta/images/5/5e/Sceau-lspd-gtav.png/revision/latest?cb=20140916194909&path-prefix=fr"> -->
+				<h1 style="margin-left: 160px; margin-top: 50px; font-size: 45px; font-family: 'Secular One', sans-serif;
+			    	margin: 0;
+    				position: absolute;
+    				top: 50%;
+    				left: 50%;
+    				-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);">LSPD Manger</h1>
+				<button class="button" id="start">Open</button>
+			</div>
+
+			<div class="buttonsopen" style="display: none;">
+				<button style="margin-top:-10%;" class="button" id="complaint">Filing a complaint</button>
+
+				<button style="margin-top:-5%;" class="button" id="Form">Form</button>
+
+			</div>	
+
+			<!-- Filing a complaint -->
+			<div id="complaintinfo" style="display: none;">
+				<label class="label">First Name</label>
+				<input id="ft" type="text" placeholder="Type Here" class="input"><br>
+				<label class="label1">Last Name</label>
+				<input id="ln" type="text" placeholder="Type Here" class="input"><br>
+				<label class="label1">Date</label>
+				<input id="date" type="date" placeholder="Type Here" class="input"><br>
+				<label style="margin-top:-28.5%;" class="label3">Complaint Description Here:</label>
+				<textarea style="margin-top:-8.5%;resize: none;"id="reason"type="text" type="textarea" placeholder="....." class="why" ></textarea><br>
+				<label style="margin-top:-4%;" class="label1">Image URL</label>
+
+				<input id="myImg"style="margin-top:-1.0%;" type="text"  class="input"><br>
+
+				<button class="sumbit" id="sumbit2">Sumbit</button>
+				<button class="button" id="back2">Back</button>
+				<strong class="warn"  style="margin-top:-1%;" id="warn1">Please Fill All The Values!</strong>
+
+
+			</div>
+			
+			<!-- Form -->
+
+
+
+			<div id="info" style="display: none;">
+				
+				<label class="label">First Name</label>
+				<input id="firstname" type="text" placeholder="Type Here" class="input"  required="true" name="need" ><br>
+				<label class="label1">Last Name</label>
+				<input id="lastname" type="text" placeholder="Type Here" class="input"  required="true" name="need" ><br>
+				<label class="label2">Age</label>
+				<input id="age" type="number" placeholder="Type Here" class="input"  required="true" name="need" ><br>
+				<label class="label3">Why Do You Want To Be On The LSPD?</label>
+				<textarea id="why"type="text" type="textarea" placeholder="Type Here" class="why"  required="true"  style="outline:none;resize: none;" name="need"></textarea><br>
+				<label class="label4">Gender:</label>
+
+				<select  class="gender" id="gender" required="true">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+
+
+				<strong class="warn"  id="warn">Please Fill All The Values!</strong>
+				<button class="sumbit" id="sumbit">Sumbit</button>
+				<button  class="button" id="back">Back</button>
+
+			</div>
+
+			<!-- Done -->
+
+			<div id="done" style="display:none;">
+				<strong class="thanks">Thanks</strong>
+				<button class="exit" id="exit">Exit</button>
+			</div>
+
+
+		</div>
+        <script src="./index.js" type="text/javascript"></script>
+	</body>
+</html>
